@@ -50,3 +50,32 @@
 .lightText {
   color: #666;
 }
+
+.classtest1 {
+  display: flex;
+}
+
+.headerMenu {
+  overflow: hidden;
+}
+
+.headerMenu a{
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.headerMenu a:hover{
+  color: #666;
+}
+
+@media screen and (max-width: 485px){
+  .headerMenu a{
+    float: none;
+  }
+}

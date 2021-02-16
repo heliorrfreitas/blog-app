@@ -3,8 +3,9 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Header from "./header"
 
-const name = '[Your Name]'
+const name = 'Helio Rui Ramos Freitas'
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
@@ -14,7 +15,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="This is my personal blog here on Vercel."
         />
         <meta
           property="og:image"
@@ -30,13 +31,14 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/photo-profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
+            <Header />
           </>
         ) : (
           <>
@@ -44,7 +46,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.jpg"
+                  src="/images/photo-profile.jpg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
@@ -52,11 +54,7 @@ export default function Layout({ children, home }) {
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
+            <Header />
           </>
         )}
       </header>
