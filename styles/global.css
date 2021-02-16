@@ -25,3 +25,9 @@ img {
   max-width: 100%;
   display: block;
 }
+
+code{
+  background-color: #eee;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 3px;
+}
