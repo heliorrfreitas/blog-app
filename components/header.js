@@ -6,17 +6,15 @@ function Header(){
     return(
         <div className={utilStyles.headerMenu}>
             <Link href="/">
-            <a >{"Home"}</a>
-            </Link>
-            <Link href="/">
+            <a >{"Blog"}</a>
+            </Link>            
+            <Link href="/about">
             <a >{"About me"}</a>
             </Link>
-            <Link href="/">
+            <Link href="/portfolio">
             <a >{"Portfolio"}</a>
             </Link>
-            <Link href="/">
-            <a >{"Blog"}</a>
-            </Link>
+
         </div>
     )
 }
