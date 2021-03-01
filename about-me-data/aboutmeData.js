@@ -1,0 +1,5 @@
+export const about = {
+    intro: "I am Helio Rui. I am from Brazil. I love learning about computers, programming, space exploration, reading mangas, playing games, soccer, and whatever else I find interesting. \n\nI have a bachelor of science in computer science. It was a long road, but I made it. During my road, I even got to study abroad. I was awarded with full sponsorship through the Brazilian government to study in a university from the United States. \n\nI have worked on lots of different projects like ERP systems, websites, wordpress plugins, wordpress themes, desktop applications, computer games, android apps, iOS apps, and even in robotic projects. All this variety helps me to have a broader view and think about options when it comes to solving problems. I do have a focus though, I focus on web development. In addition, I have been working with web technologies for nearly 5 years. \n\nTo conclude, I am very interested in technology and problem solving. ",
+    introBR : "Intro em portugues vai estar aqui"
+}
+
