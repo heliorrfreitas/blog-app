@@ -83,6 +83,13 @@
   white-space: pre-line;
 }
 
+.socialIcons{
+  min-height: 30px;
+  min-width: 30px;
+  margin-right: 20px;
+  color: #000;
+}
+
 @media screen and (max-width: 485px){
   .headerMenu a{
     float: none;

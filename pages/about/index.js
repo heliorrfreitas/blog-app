@@ -2,22 +2,27 @@ import React from "react"
 import utilStyles from '../../styles/utils.module.css'
 import Layout from '../../components/layout'
 import {about} from '../../about-me-data/aboutmeData'
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import Link from 'next/link'
 
 export default function About() {
-    const navLanguage = navigator.language
-
+    
     return (
         <Layout>
             <div className={utilStyles.aboutMe}>
-                <p>
-                    
+                <p>             
                     { 
-                        navLanguage === "pt-BR" 
-                            ?
-                                about.introBR
-                            :   about.intro
+                        about.intro
                     }
                 </p>
+            </div>
+            <div> 
+                <a href="https://github.com/heliorrfreitas" target="_blank">
+                    <FaGithub className={utilStyles.socialIcons} />
+                </a>               
+                <a href="https://www.linkedin.com/in/helioruiramosfreitas/" target="_blank" >
+                    <FaLinkedin className={utilStyles.socialIcons} />
+                </a>
             </div>
             
         </Layout>
