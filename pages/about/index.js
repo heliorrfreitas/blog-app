@@ -17,10 +17,20 @@ export default function About() {
                 </p>
             </div>
             <div> 
-                <a href="https://github.com/heliorrfreitas" target="_blank">
+                <a 
+                    href="https://github.com/heliorrfreitas" 
+                    target="_blank" 
+                    title="Github"
+                    alt="click on this button to go to the my github profile"
+                >
                     <FaGithub className={utilStyles.socialIcons} />
                 </a>               
-                <a href="https://www.linkedin.com/in/helioruiramosfreitas/" target="_blank" >
+                <a 
+                    href="https://www.linkedin.com/in/helioruiramosfreitas/" 
+                    target="_blank" 
+                    title="Linkedin" 
+                    alt="click on this button to go to the my linkedin profile"
+                >
                     <FaLinkedin className={utilStyles.socialIcons} />
                 </a>
             </div>
